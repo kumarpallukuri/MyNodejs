@@ -1,0 +1,31 @@
+{
+  "name": "contactlist",
+  "version": "1.0.0",
+  "description": "Read write contacts",
+  "main": "yes",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarpallukuri/MyNodejs.git"
+  },
+  "dependencies": {
+    "mongojs": "*",
+    "body-parser": "*",
+	"path": "*",
+	"express": "*"
+	  },
+  "keywords": [
+    "Angular",
+    "mongodb",
+    "express"
+  ],
+  "author": "kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumarpallukuri/MyNodejs/issues"
+  },
+  "homepage": "https://github.com/kumarpallukuri/MyNodejs#readme"
+}
