@@ -14,7 +14,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 		$http.post('/contactlist',$scope.contact).success(function(response){
 			console.log(response);
 			$scope.contactsArr.push($scope.contact);
-		//	refresh();
+			refresh();
 		});
 		$scope.contact =  "";
 	}
@@ -22,7 +22,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 		console.log(id);
 		$http.delete('/contactlist/'+ id).success(function(response){
 				console.log(response);
-		//		refresh();
+				refresh();
 			$scope.removeFromArr(id);
 			});
 	}
@@ -31,7 +31,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 		$http.get('/contactlist/'+ id).success(function(response){
 			 $scope.contact = response;
 				console.log(response);
-		//		refresh();
+				refresh();
 			});
 	}
 	
@@ -46,7 +46,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 		$http.put('/contactlist/'+ $scope.contact._id,$scope.contact).success(function(response){
 				console.log(response);
 				$scope.contactsArr = response;
-	//			refresh();
+			refresh();
 			});
 			$scope.contact =  "";
 	}
